@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    display: grid;
+    grid-template: 56px 928px / 218px 1fr;
+    grid-template-areas: "header header" "sidebar main";
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    background-color: #F8F8F8;
+    grid-area: main;
+}
+
+.container-header {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    padding: 0px 24px;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    width: 146px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+
+.center {
+    display: flex;
+    width: 404px;
+    height: 40px;
+}
+
+.retangulo-1 {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    background: #FFF;
+}
+
+.retangulo-2 {
+    display: flex;
+    width: 57px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    background: #F8F8F8;
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background-image: url('../images/avatar.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 218px;
+    height: 968px;
+    padding: 24px;
+    gap: 22px;
+}
+
+.item{
+    display: flex;
+    width: auto;
+    height: 24px;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    
+}
+
+.icons {
+    height: 24px;
+}
+
+.main-content {
+    display: grid;
+    grid-template: repeat(3, 262px) / repeat(5, 282px);
+    padding: 24px 28px;
+    gap: 14px;
+    place-content: center;
+    place-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 262px;
+    width: 282px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.infos {
+    display: flex;
+    gap: 10px;
+    width: 250px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 197px;
+    height: auto;
+    
+    gap: 12px;
+}
+
+.titulo {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.subtitulo {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
